@@ -1,11 +1,11 @@
 // Script to investigate how Vercel handles x-forwarded-for.
-// Usage: pnpm check:xff [URL]  (defaults to the production URL if omitted)
+// Usage: pnpm check:x-forwarded-for [URL]  (defaults to the production URL if omitted)
 import http from "node:http";
 import https from "node:https";
 import z from "zod";
 import consola from "consola";
 
-const DEFAULT_URL = "https://vercel-header-confirmation.vercel.app/api/header";
+const DEFAULT_URL = "https://vercel-header-confirmation.vercel.app/api/x-forwarded-for";
 const RESPONSE_PREFIX = "x-forwarded-for's IP: ";
 const MAX_CELL_LENGTH = 40;
 

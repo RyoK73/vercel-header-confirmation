@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "check:xff": "tsx src/x-forwarded-for/fetchAppByCorruptHeader.ts"
+    "check:x-forwarded-for": "tsx src/x-forwarded-for/index.ts"
   },
   "dependencies": {
     "next": "16.4.5",
